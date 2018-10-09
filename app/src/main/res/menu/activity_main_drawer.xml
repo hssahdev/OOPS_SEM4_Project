@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+
+    <!--<item android:title="       HEURISTIC SEARCH">-->
+        <!--<menu>-->
+                    <!--<item-->
+                        <!--android:id="@+id/astar"-->
+                        <!--android:title="A*" />-->
+                    <!--<item-->
+                        <!--android:id="@+id/aostar"-->
+                        <!--android:title="AO*" />-->
+           <!--<item-->
+                <!--android:id="@+id/generate_and_test"-->
+                <!--android:title="Generate And Test" />-->
+            <!--<item-->
+                <!--android:id="@+id/hill_climbing"-->
+                <!--android:title="Hill Climbing" />-->
+            <!--<item-->
+                <!--android:id="@+id/constraint_satisfaction"-->
+                <!--android:title="Constraint Satisfaction Problem" />-->
+        <!--</menu>-->
+    <!--</item>-->
+
+    <item android:title="       NON HEURISTIC SEARCH">
+        <menu>
+            <item
+                android:id="@+id/BFS"
+                android:title="Breath First Search" />
+            <item
+                android:id="@+id/DFS"
+                android:title="Depth First Search" />
+        </menu>
+    </item>
+
+
+
+</menu>

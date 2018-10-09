@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.DFS"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+    <TextView
+        android:layout_marginTop="5dp"
+        android:padding="10dp"
+        android:background="@drawable/border"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Depth First Search"
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:gravity="center"
+        android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CREATE GRAPH"
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline" />
+
+    <LinearLayout
+        android:padding="5dp"
+        android:background="@drawable/border"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <EditText
+        android:inputType="number"
+        android:id="@+id/dfssize"
+        android:hint="Number Of Vertices"
+       android:layout_weight="3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+        <Button
+            android:text="SUBMIT"
+            android:id="@+id/dfssizebtn"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:padding="10dp"
+        android:background="@drawable/border"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:gravity="center"
+            android:layout_margin="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ADD EDGES OF GRAPH"
+            android:textAppearance="@style/TextAppearance.AppCompat.Subhead" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+        <EditText
+            android:inputType="number"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:id="@+id/dfsedgev1"
+            android:hint="Vertex V1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+            <EditText
+                android:inputType="number"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:id="@+id/dfsedgev2"
+                android:hint="Vertex V1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:layout_weight="1"
+                android:text="SUBMIT"
+                android:id="@+id/dfsedgebtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_margin="5dp"
+            android:id="@+id/textedge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginBottom="5dp"
+        android:padding="10dp"
+        android:background="@drawable/border"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/dfsstartingvertex"
+            android:inputType="number"
+            android:hint="Starting vertex for DFS"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:layout_weight="1"
+            android:text="SHOW DFS"
+            android:layout_gravity="center"
+            android:id="@+id/dfshowbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+        </LinearLayout>
+        <TextView
+            android:textStyle="bold"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+            android:hint="DFS"
+            android:id="@+id/dfshowtext"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>
